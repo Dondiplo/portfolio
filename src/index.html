@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./sample.css" />
     <script
       src="https://kit.fontawesome.com/f3692bd5ae.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body class="bg-white dark:bg-slate-900">
-    <div class="mx-4 my-4">
-      <div class="flex justify-end">
+    <div class="mx-4 my-24">
+      <div class="flex justify-end mx-8">
         <img class="moon cursor-pointer" src="./pics/Vector.png" alt="" />
         <img
           class="sun cursor-pointer display-none"
@@ -22,121 +23,564 @@
       </div>
 
       <div class="mx auto container dark:text-slate-400">
-        <div
-          class="grid lg:flex gap-4 lg:justify-between py-16 lg:py-32"
-        >
-        <header class="mx-auto lg:fixed lg:left-24 lg:top-auto lg:max-h-screen lg:w-1/2 lg:py-24">
-          <div>
-            <h1 class="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-5xl">
-              Oladipupo Desmond-Eke
-            </h1>
-        
-            <p class="mt-4 max-w-xs leading-normal">
-              I build accessible, inclusive products and digital experiences for the web.
-            </p>
-        
-            <nav class="nav lg:block mt-16 w-max">
-              <ul>
-                <li>
-                  <a class="group flex items-center py-3 active" href="#about">
-                    <span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                    <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-900 dark:group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                      About
-                    </span>
-                  </a>
-                </li>
-        
-                <li>
-                  <a class="group flex items-center py-3 active" href="#experience">
-                    <span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                    <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-900 dark:group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                      EXPERIENCE
-                    </span>
-                  </a>
-                </li>
-        
-                <li>
-                  <a class="group flex items-center py-3 active" href="#project">
-                    <span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                    <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-900 dark:group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                      PROJECT
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        
-          <ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
-            <!-- Add your social media links here -->
-            <li class="mr-5 text-xs">
-              <a class="block hover:text-slate-200" href="https://www.instagram.com/your-instagram-profile" target="_blank" rel="noreferrer">
-                <i class="fab fa-instagram fa-2xl dark:text-slate-200 hover:font-extrabold"></i>
-              </a>
-            </li>
-        
-            <li class="mr-5 text-xs">
-              <a class="block hover:text-slate-200" href="https://github.com/your-github-profile" target="_blank" rel="noreferrer">
-                <i class="fab fa-github fa-2xl dark:text-slate-200 hover:font-extrabold"></i>
-              </a>
-            </li>
-        
-            <li class="mr-5 text-xs">
-              <a class="block hover:text-slate-200" href="https://twitter.com/your-twitter-profile" target="_blank" rel="noreferrer">
-                <i class="fab fa-twitter fa-2xl dark:text-slate-200 hover:font-extrabold"></i>
-              </a>
-            </li>
-        
-            <li class="mr-5 text-xs">
-              <a class="block hover:text-slate-200" href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noreferrer">
-                <i class="fab fa-linkedin fa-2xl dark:text-slate-200 hover:font-extrabold"></i>
-              </a>
-            </li>
-          </ul>
-        </header>
-        
-          <main id="content" class="mx-auto dark:text-slate-200 pt-24  lg:py-24  lg:ml-[45rem] lg:w-3/4">
-<section id="about" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="about me">
-<div class=" z-20 -mx-6 mb-4 w-screen dark:bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12  
-lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 ">
-<p class="mb-4">
-  Welcome to my portfolio!
+        <div class="grid lg:flex gap-4 lg:justify-between py-16 lg:py-32">
+          <header
+            class="mx-auto lg:fixed lg:left-24 lg:top-auto lg:max-h-screen lg:w-1/2 lg:py-24"
+          >
+            <div>
+              <h1
+                class="text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-200 sm:text-5xl"
+              >
+                Oladipupo Desmond-Eke
+              </h1>
 
-In early 2022, I took the plunge into the captivating world of web development, and since then, I've been on an exhilarating journey of continuous learning and growth. Over time, I've had the privilege to collaborate with seasoned developers, gaining valuable insights from their years of experience. Along the way, I've had the pleasure of working with reputable real estate and fintech companies in Nigeria, where I contributed to various projects and honed my skills.
+              <p class="mt-4 max-w-xs leading-normal">
+                I build accessible, inclusive products and digital experiences
+                for the web.
+              </p>
 
-My passion lies in product development and project leadership. I find immense satisfaction in building innovative products and leading successful projects for both employers and clients. As I continue to learn and expand my knowledge, I remain committed to delivering top-notch solutions that exceed expectations.
+              <nav class="nav lg:block mt-16 w-max">
+                <ul>
+                  <li>
+                    <a
+                      class="group flex items-center py-3 active"
+                      href="#about"
+                    >
+                      <span
+                        class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"
+                      ></span>
+                      <span
+                        class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-900 dark:group-hover:text-slate-200 group-focus-visible:text-slate-200"
+                      >
+                        About
+                      </span>
+                    </a>
+                  </li>
 
-Beyond coding, I find solace and rejuvenation in outdoor activities. Whether it's basking at the beach, pushing my limits at the gym, or nurturing my aquarium of fishes (while resisting the temptation to overfeed them!), I believe in striking a balance between work and life to stay inspired and creative.
+                  <li>
+                    <a
+                      class="group flex items-center py-3 active"
+                      href="#experience"
+                    >
+                      <span
+                        class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"
+                      ></span>
+                      <span
+                        class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-900 dark:group-hover:text-slate-200 group-focus-visible:text-slate-200"
+                      >
+                        Projects
+                      </span>
+                    </a>
+                  </li>
 
-I'm excited to showcase my work, experiences, and growth in this portfolio. Thank you for stopping by, and I look forward to connecting with you.
+                  <li>
+                    <a
+                      class="group flex items-center py-3 active"
+                      href="#project"
+                    >
+                      <span
+                        class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"
+                      ></span>
+                      <span
+                        class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-900 dark:group-hover:text-slate-200 group-focus-visible:text-slate-200"
+                      >
+                        Contact
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
 
+            <ul class="ml-1 mt-8 flex items-center" aria-label="Social media">
+              <!-- Add your social media links here -->
+              <li class="mr-5 text-xs">
+                <a
+                  class="block hover:text-slate-200"
+                  href="https://www.instagram.com/your-instagram-profile"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i
+                    class="fab fa-instagram fa-2xl dark:text-slate-200 hover:font-extrabold"
+                  ></i>
+                </a>
+              </li>
 
-</p>
-</div>
-</section>
+              <li class="mr-5 text-xs">
+                <a
+                  class="block hover:text-slate-200"
+                  href="https://github.com/your-github-profile"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i
+                    class="fab fa-github fa-2xl dark:text-slate-200 hover:font-extrabold"
+                  ></i>
+                </a>
+              </li>
 
-<section id="experience" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Work experience">
-<div class="">
-<h2 class="card hover:bg-slate-600 hover:bg-opacity-[20%] hover:bg-blur-[20px]">
-  kljfnlvknflkx;ncvlamv
-  aksvmalksmvalkjnsdvjnlksdnvzksn/vdwfjn</h2>
-</div>
+              <li class="mr-5 text-xs">
+                <a
+                  class="block hover:text-slate-200"
+                  href="https://twitter.com/your-twitter-profile"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i
+                    class="fab fa-twitter fa-2xl dark:text-slate-200 hover:font-extrabold"
+                  ></i>
+                </a>
+              </li>
 
-<div>
-  <ol class="group/list">
-<li class="mb-12">
-  <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-<div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block
- lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+              <li class="mr-5 text-xs">
+                <a
+                  class="block hover:text-slate-200"
+                  href="https://www.linkedin.com/in/your-linkedin-profile"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <i
+                    class="fab fa-linkedin fa-2xl dark:text-slate-200 hover:font-extrabold"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </header>
 
- 
-</div>
-  </div>
-</li>
-  </ol>
+          <main
+            id="content"
+            class="mx-auto dark:text-slate-200 pt-24 lg:py-24 lg:ml-[45rem] lg:w-3/4"
+          >
+            <section
+              id="about"
+              class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+              aria-label="about me"
+            >
+              <div
+                class="z-20 -mx-6 mb-4 w-screen dark:bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0"
+              >
+                <p class="mb-4">
+                  Welcome to my portfolio! In early 2022, I entered the
+                  captivating world of web development, embarking on a journey
+                  of continuous learning and growth. Collaborating with seasoned
+                  developers, I gained insights from their experience. I've
+                  partnered with reputable real estate and fintech firms in
+                  Nigeria, contributing to diverse projects and honing my
+                  skills. My passion lies in product development and project
+                  leadership. </p>
+                   <p>I thrive on building innovative products and
+                  leading successful projects, delivering solutions that exceed
+                  expectations. Beyond coding, outdoor activities recharge me.
+                  Balancing work, the gym, and caring for my aquarium of fishes
+                  keeps me inspired. Explore my portfolio to see my work,
+                  experiences, and growth. Thank you for visiting, and let's
+                  connect soon!
+                </p>
+              </div>
+            </section>
 
-</div>
-</section>
+            <!-- experience -->
+
+            <section
+              id="experience"
+              class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+              aria-label="Work experience"
+            >
+              <div
+                class="sticky top-0 z-20 -mx-6 mb-4 bg-slate-200 dark:bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+              >
+                <h2
+                  class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only"
+                >
+                  Projects
+                </h2>
+              </div>
+
+              <div>
+                <!-- list buttons -->
+
+                <ol class="group/list">
+                  <li class="mb-12">
+                    <div
+                      class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+                    >
+                      <div
+                        class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block dark:lg:group-hover:bg-slate-800/50 lg:group-hover:bg-[#050038] lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+                      ></div>
+                      <header
+                        class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 sm:col-span-2"
+                        aria-label="2018- present"
+                      >
+                        <img src="./pics/jagunmart.png" alt="" />
+                      </header>
+
+                      <div class="z-10 sm:col-span-6">
+                        <h3 class="font-medium leading-snug">
+                          <div>
+                            <a
+                              class="inline-flex items-baseline font-medium leading-tight text-slate-600 dark:text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                              href="https://j-mart-six.vercel.app/shop"
+                              target="_blank"
+                              rel="noreferrer"
+                              aria-label="lead engineer at upstatement"
+                            >
+                              <span
+                                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                              ></span>
+                              <span>
+                                Jagun Mart
+                                <span class="inline-block">
+                                  <i
+                                    class="fa-sharp fa-solid fa-arrow-up inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 rotate-[30deg] group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                  ></i>
+                                </span>
+                              </span>
+                            </a>
+                          </div>
+
+                          <div class="text-slate-500" aria-hidden="true"></div>
+                          <p class="mt-2 text-sm leading-normal text-slate-500">
+                            An online e-commerce website that built with React
+                            also demonstrating API management ,react
+                            dependencies such as framer motion,react-router-dom
+                            react-carosel
+                          </p>
+                          <ul
+                            class="mt-2 flex flex-wrap"
+                            aria-label="Technologies used"
+                          >
+                            <li class="mr-1.5 mt-2">
+                              <div
+                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                              >
+                                React
+                              </div>
+                            </li>
+
+                            <li class="mr-1.5 mt-2">
+                              <div
+                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                              >
+                                Tailwind
+                              </div>
+                            </li>
+
+                            <li class="mr-1.5 mt-2">
+                              <div
+                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                              >
+                                Javascript
+                              </div>
+                            </li>
+                          </ul>
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mb-12">
+                    <div
+                      class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+                    >
+                      <div
+                        class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block dark:lg:group-hover:bg-slate-800/50 lg:group-hover:bg-[#050038] lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+                      ></div>
+                      <header
+                        class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 sm:col-span-2"
+                        aria-label="2018- present"
+                      >
+                        <video src="./pics/payT.mp4" loop muted></video>
+                      </header>
+
+                      <div class="z-10 sm:col-span-6">
+                        <h3 class="font-medium leading-snug">
+                          <div>
+                            <a
+                              class="inline-flex items-baseline font-medium leading-tight text-slate-600 dark:text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                              href="https://pay-terminal.vercel.app/"
+                              target="_blank"
+                              rel="noreferrer"
+                              aria-label="lead engineer at upstatement"
+                            >
+                              <span
+                                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                              ></span>
+                              <span>
+                                pay-terminal
+                                <span class="inline-block"
+                                  >Nigeria
+                                  <i
+                                    class="fa-sharp fa-solid fa-arrow-up inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 rotate-[30deg] group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                  ></i>
+                                </span>
+                              </span>
+                            </a>
+                          </div>
+
+                          <div class="text-slate-500" aria-hidden="true"></div>
+                          <p class="mt-2 text-sm leading-normal text-slate-500">
+                            A reliable way you can swiftly make payments,
+                            seamlessly send and receive money, and effortlessly
+                            stay connected to a wide range of local and
+                            international services
+                          </p>
+                          <ul
+                            class="mt-2 flex flex-wrap"
+                            aria-label="Technologies used"
+                          >
+                            <li class="mr-1.5 mt-2">
+                              <div
+                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                              >
+                                NextJs
+                              </div>
+                            </li>
+
+                            <li class="mr-1.5 mt-2">
+                              <div
+                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                              >
+                                Tailwind
+                              </div>
+                            </li>
+
+                            <li class="mr-1.5 mt-2">
+                              <div
+                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                              >
+                                Typescript
+                              </div>
+                            </li>
+
+                            <li class="mr-1.5 mt-2">
+                              <div
+                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                              >
+                                Prisma
+                              </div>
+                            </li>
+                          </ul>
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="mb-12">
+                    <div
+                      class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+                    >
+                      <div
+                        class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block dark:lg:group-hover:bg-slate-800/50 lg:group-hover:bg-[#050038] lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+                      ></div>
+                      <header
+                        class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 sm:col-span-2"
+                        aria-label="2018- present"
+                      >
+                        <img src="./pics/wirepay.png" alt="" />
+                      </header>
+
+                      <div class="z-10 sm:col-span-6">
+                        <h3 class="font-medium leading-snug">
+                          <div>
+                            <a
+                              class="inline-flex items-baseline font-medium leading-tight text-slate-600 dark:text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                              href="https://wire-c.vercel.app/"
+                              target="_blank"
+                              rel="noreferrer"
+                              aria-label="lead engineer at upstatement"
+                            >
+                              <span
+                                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                              ></span>
+                              <span>
+                                Wirepay
+                                <span class="inline-block"
+                                  >Nigeria Replica
+                                  <i
+                                    class="fa-sharp fa-solid fa-arrow-up inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 rotate-[30deg] group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                  ></i>
+                                </span>
+                              </span>
+                            </a>
+                          </div>
+
+                          <div class="text-slate-500" aria-hidden="true"></div>
+                          <p class="mt-2 text-sm leading-normal text-slate-500">
+                            Your financial passport Easy multi-currency money
+                            management, instant payments, best exchange rates.
+                            Open a global account now that moves with you round
+                            the world.We offer our products and services in
+                            partnership with licensed transmitters and banking
+                            partners in their respective jurisdictions.
+                          </p>
+                          <ul
+                            class="mt-2 flex flex-wrap"
+                            aria-label="Technologies used"
+                          >
+                            <li class="mr-1.5 mt-2">
+                              <div
+                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                              >
+                                Tailwind
+                              </div>
+                            </li>
+                          </ul>
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="mb-12">
+                    <div
+                      class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50"
+                    >
+                      <div
+                        class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block dark:lg:group-hover:bg-slate-800/50 lg:group-hover:bg-[#050038] lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"
+                      ></div>
+                      <header
+                        class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500 sm:col-span-2"
+                        aria-label="2018- present"
+                      >
+                        <img src="./pics/carhub.png" alt="" />
+                      </header>
+
+                      <div class="z-10 sm:col-span-6">
+                        <h3 class="font-medium leading-snug">
+                          <div>
+                            <a
+                              class="inline-flex items-baseline font-medium leading-tight text-slate-600 dark:text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                              href="https://jagun-autos.vercel.app/"
+                              target="_blank"
+                              rel="noreferrer"
+                              aria-label="lead engineer at upstatement"
+                            >
+                              <span
+                                class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"
+                              ></span>
+                              <span>
+                                CarHub
+                                <span class="inline-block">
+                                  <i
+                                    class="fa-sharp fa-solid fa-arrow-up inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 rotate-[30deg] group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                  ></i>
+                                </span>
+                              </span>
+                            </a>
+                          </div>
+
+                          <div class="text-slate-500" aria-hidden="true"></div>
+                          <p class="mt-2 text-sm leading-normal text-slate-500">
+                            fond,book or rent a car __ quickly and easily
+                            Streamline your car rental experience with our
+                            effortless booking process ."Experience seamless
+                            journeys with CarHub, your trusted car rental
+                            platform. Explore a fleet of vehicles for every
+                            adventure, ensuring convenience and freedom on the
+                            road."
+                          </p>
+                          <ul
+                            class="mt-2 flex flex-wrap"
+                            aria-label="Technologies used"
+                          >
+                            <li class="mr-1.5 mt-2">
+                              <div
+                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                              >
+                                NextJs
+                              </div>
+                            </li>
+
+                            <li class="mr-1.5 mt-2">
+                              <div
+                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                              >
+                                css
+                              </div>
+                            </li>
+
+                            <li class="mr-1.5 mt-2">
+                              <div
+                                class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300"
+                              >
+                                Typescript
+                              </div>
+                            </li>
+                          </ul>
+                        </h3>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </section>
+
+            <section
+              id="#contact"
+              class="mt-8 text-slate-900 dark:text-slate-200 mx-auto flex justify-center"
+            >
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-10 mx-auto">
+                  <h1 class="intro-text font-bold text-4xl">Contact</h1>
+                  <p>
+                    Get in touch with me directly on
+                    <a class="font-bold" href="" target="_blank"
+                      >oladipupo.eke@gmail.com</a
+                    >
+                  </p>
+
+                  <div class="mx-auto mt-8">
+                    <form
+                      id="contact-form"
+                      action="https://formspree.io/f/myyqerjl"
+                      method="POST"
+                    >
+                      <div class="space-y-6">
+                        <div class="field-half">
+                          <input
+                            type="text"
+                            id="user_name"
+                            name="user_name"
+                            placeholder="Name"
+                            aria-required="true"
+                            required
+                            class="p-4 w-[80%] rounded-lg border-[0.5px] bg-transparent focus:outline-none focus:bg-white dark:focus:bg-black"
+                          />
+                        </div>
+                        <div class="field-half">
+                          <input
+                            type="email"
+                            id="user_email"
+                            name="user_email"
+                            placeholder="Email"
+                            aria-required="true"
+                            required
+                            class="p-4 w-[80%] rounded-lg border-[0.5px] bg-transparent focus:outline-none focus:bg-white dark:focus:bg-black"
+                          />
+                        </div>
+                        <div class="field-half">
+                          <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            placeholder="message"
+                            rows="10"
+                            class="p-4 w-[80%] rounded-lg border-[0.5px] bg-transparent focus:outline-none focus:bg-white dark:focus:bg-black"
+                          ></textarea>
+                        </div>
+                        <div>
+                          <button
+                            type="submit"
+                            aria-label="send message"
+                            class="p-4 bg-slate-900 dark:bg-slate-100 rounded-lg text-slate-100 dark:text-black hover:bg-gray-600 dark:hover:bg-slate-400"
+                          >
+                            Send message
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
           </main>
         </div>
       </div>

@@ -38,3 +38,30 @@ moonIcon.addEventListener('click',() =>{
 });
 
 themeCheck();
+
+
+
+//video autoplay
+
+//   const video = document.getElementById('video')
+//   video.addEventListener('mouseenter', () => {
+//     video.play();
+//   });
+//   video.addEventListener('mouseleave',() => {
+//     video.onpause
+//   } )
+
+const videos = document.querySelectorAll('.video');
+
+videos.forEach(video => {
+  video.addEventListener('mouseenter', () => {
+    video.play();
+  });
+  
+  video.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+  });
+});
+
+
